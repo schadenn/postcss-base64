@@ -1,3 +1,8 @@
+#### You might want to use this instead: [postcss-url](https://github.com/postcss/postcss-url)
+Found it after I built this repo 🙈
+
+
+<br/><br/><br/><br/><br/><br/>
 postcss-url-base64, a [PostCSS](https://github.com/postcss/postcss/) plugin, replaces values inside `url()` functions with their base64 encoded strings.
 
 [GitHub](https://github.com/schadenn/postcss-base64) | [NPM](https://www.npmjs.com/package/postcss-url-base64) | [@denyo357](https://twitter.com/denyo357)

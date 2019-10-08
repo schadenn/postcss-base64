@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing options default on file fonts.css 1`] = `
+"@font-face {
+  font-family: \\"VagRoundedThin\\";
+  src: url(\\"./fonts/font.eot\\") format(\\"eot\\"),
+    url(\\"./fonts/font.woff2\\") format(\\"woff2\\"),
+    url(\\"./fonts/font.woff\\") format(\\"woff\\"),
+    url(\\"./fonts/font.ttf\\") format(\\"truetype\\");
+}
+
+.test {
+  background-image: url(\\"data:image/svg;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTYgMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTggNi4xNzNMMS44MjcgMCAwIDEuODI3bDcuOTg1IDcuOTg1TDggOS43OTdsLjAxNS4wMTVMMTYgMS44MjcgMTQuMTczIDAgOCA2LjE3M3oiLz4KPC9zdmc+Cg==\\");
+}
+"
+`;
+
+exports[`Testing options default on file test.css 1`] = `
+".test--1 {
+  background-image: url('data:image/svg+xml;base64,<svg viewBox=\\"0 0 16 10\\" xmlns=\\"http://www.w3.org/2000/svg\\"><path d=\\"M8 6.173L1.827 0 0 1.827l7.985 7.985L8 9.797l.015.015L16 1.827 14.173 0 8 6.173z\\"/></svg>');
+}
+
+.test--2 {
+  background-image: url(\\"data:image/svg;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTYgMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTggNi4xNzNMMS44MjcgMCAwIDEuODI3bDcuOTg1IDcuOTg1TDggOS43OTdsLjAxNS4wMTVMMTYgMS44MjcgMTQuMTczIDAgOCA2LjE3M3oiLz4KPC9zdmc+Cg==\\");
+}
+
+.test--3 {
+  background: transparent url(\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAfCAYAAAClDZ5ZAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAuIwAALiMBeKU/dgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHLSURBVFiF1dTHbhNRFAbgbx0LXgASagShhs4GWFBE6L0THhIJZQVIwFNQQguhE4leIliMRzHx2L537JmJf+mufO6Z/xtLQ3MGcBP7M36rOntwC4s6DQ7gNv7iKw4U2ysqe/FZ0u2eNpiaOUR6vuFg8R07Zh+++L/bfRmYGu7MG0zPDxwrp29mDkleaFa3B1icDtZwt8VgI+Z4adXn0g7RhJnoMJie7xgrETFWf2ZItwnYhg+BF37iRAmIwxGIGexOL26NxJwsEBHzT8xg1/wFW/A+AnOqYsQn7Gy1qErMEclHpWtEmtEIzC+c7gHiaCRiR+jiUbwLXPwHl7tAnJG8kJBnfcT22AdsjsRcyYE4WzQizQimIzBXI3afi0C8xaa8iLyYawE7z+N3BGJjt4g0a/EqAnO9za4LEYg3vUTkxYxn7LgYidjQa0SaNZiKwNxouHtpoSDyYGbrmBjEa6wvGpEXMxs4O1XfXWqG8TKwYMiZxrpSBQ0ZxosOBUMRIyV3b8pyTMqPeI7VZZdulWV4Ih9iVQV92yYW88wCRKQZwmNhiJUVdQzOEB7pc0SaQdmYp1hRXa18GcRDfY5Is1SCmZR8pvs6S+qn0PwDekPzuZHIhogAAAAASUVORK5CYII=\\") no-repeat center;
+}
+
+.test--4 {
+  /* Should not be affected by test */
+  background-image: url(\\"images/test.jpg\\");
+}
+
+/*!
+ * Comment
+ */
+"
+`;
+
+exports[`Testing options font no-multiple on file fonts.css 1`] = `
+"@font-face {
+  font-family: \\"VagRoundedThin\\";
+  src: url(\\"data:font/eot;base64,TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNldGV0dXIgc2FkaXBzY2luZyBlbGl0ciwgc2VkIGRpYW0gbm9udW15IGVpcm1vZCB0ZW1wb3IgaW52aWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWduYSBhbGlxdXlhbSBlcmF0LCBzZWQgZGlhbSB2b2x1cHR1YS4gQXQgdmVybyBlb3MgZXQgYWNjdXNhbSBldCBqdXN0byBkdW8gZG9sb3JlcyBldCBlYSByZWJ1bS4gU3RldCBjbGl0YSBrYXNkIGd1YmVyZ3Jlbiwgbm8gc2VhIHRha2ltYXRhIHNhbmN0dXMgZXN0IExvcmVtIGlwc3VtIGRvbG9yIHNpdCBhbWV0LiBMb3JlbSBpcHN1bSBkb2xvciBzaXQgYW1ldCwgY29uc2V0ZXR1ciBzYWRpcHNjaW5nIGVsaXRyLCBzZWQgZGlhbSBub251bXkgZWlybW9kIHRlbXBvciBpbnZpZHVudCB1dCBsYWJvcmUgZXQgZG9sb3JlIG1hZ25hIGFsaXF1eWFtIGVyYXQsIHNlZCBkaWFtIHZvbHVwdHVhLiBBdCB2ZXJvIGVvcyBldCBhY2N1c2FtIGV0IGp1c3RvIGR1byBkb2xvcmVzIGV0IGVhIHJlYnVtLiBTdGV0IGNsaXRhIGthc2QgZ3ViZXJncmVuLCBubyBzZWEgdGFraW1hdGEgc2FuY3R1cyBlc3QgTG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQu\\") format(\\"eot\\");
+}
+
+.test {
+  background-image: url(\\"images/test.svg\\");
+}
+"
+`;
+
+exports[`Testing options font no-multiple on file test.css 1`] = `
+".test--1 {
+  background-image: url('data:image/svg+xml;base64,<svg viewBox=\\"0 0 16 10\\" xmlns=\\"http://www.w3.org/2000/svg\\"><path d=\\"M8 6.173L1.827 0 0 1.827l7.985 7.985L8 9.797l.015.015L16 1.827 14.173 0 8 6.173z\\"/></svg>');
+}
+
+.test--2 {
+  background-image: url(\\"images/test.svg\\");
+}
+
+.test--3 {
+  background: transparent url(\\"images/test.png\\") no-repeat center;
+}
+
+.test--4 {
+  /* Should not be affected by test */
+  background-image: url(\\"images/test.jpg\\");
+}
+
+/*!
+ * Comment
+ */
+"
+`;
+
+exports[`Testing options font with mutiple on file fonts.css 1`] = `
+"@font-face {
+  font-family: \\"VagRoundedThin\\";
+  src: url(\\"data:font/eot;base64,TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNldGV0dXIgc2FkaXBzY2luZyBlbGl0ciwgc2VkIGRpYW0gbm9udW15IGVpcm1vZCB0ZW1wb3IgaW52aWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWduYSBhbGlxdXlhbSBlcmF0LCBzZWQgZGlhbSB2b2x1cHR1YS4gQXQgdmVybyBlb3MgZXQgYWNjdXNhbSBldCBqdXN0byBkdW8gZG9sb3JlcyBldCBlYSByZWJ1bS4gU3RldCBjbGl0YSBrYXNkIGd1YmVyZ3Jlbiwgbm8gc2VhIHRha2ltYXRhIHNhbmN0dXMgZXN0IExvcmVtIGlwc3VtIGRvbG9yIHNpdCBhbWV0LiBMb3JlbSBpcHN1bSBkb2xvciBzaXQgYW1ldCwgY29uc2V0ZXR1ciBzYWRpcHNjaW5nIGVsaXRyLCBzZWQgZGlhbSBub251bXkgZWlybW9kIHRlbXBvciBpbnZpZHVudCB1dCBsYWJvcmUgZXQgZG9sb3JlIG1hZ25hIGFsaXF1eWFtIGVyYXQsIHNlZCBkaWFtIHZvbHVwdHVhLiBBdCB2ZXJvIGVvcyBldCBhY2N1c2FtIGV0IGp1c3RvIGR1byBkb2xvcmVzIGV0IGVhIHJlYnVtLiBTdGV0IGNsaXRhIGthc2QgZ3ViZXJncmVuLCBubyBzZWEgdGFraW1hdGEgc2FuY3R1cyBlc3QgTG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQu\\") format(\\"eot\\"),
+    url(\\"data:font/woff2;base64,TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNldGV0dXIgc2FkaXBzY2luZyBlbGl0ciwgc2VkIGRpYW0gbm9udW15IGVpcm1vZCB0ZW1wb3IgaW52aWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWduYSBhbGlxdXlhbSBlcmF0LCBzZWQgZGlhbSB2b2x1cHR1YS4gQXQgdmVybyBlb3MgZXQgYWNjdXNhbSBldCBqdXN0byBkdW8gZG9sb3JlcyBldCBlYSByZWJ1bS4gU3RldCBjbGl0YSBrYXNkIGd1YmVyZ3Jlbiwgbm8gc2VhIHRha2ltYXRhIHNhbmN0dXMgZXN0IExvcmVtIGlwc3VtIGRvbG9yIHNpdCBhbWV0LiBMb3JlbSBpcHN1bSBkb2xvciBzaXQgYW1ldCwgY29uc2V0ZXR1ciBzYWRpcHNjaW5nIGVsaXRyLCBzZWQgZGlhbSBub251bXkgZWlybW9kIHRlbXBvciBpbnZpZHVudCB1dCBsYWJvcmUgZXQgZG9sb3JlIG1hZ25hIGFsaXF1eWFtIGVyYXQsIHNlZCBkaWFtIHZvbHVwdHVhLiBBdCB2ZXJvIGVvcyBldCBhY2N1c2FtIGV0IGp1c3RvIGR1byBkb2xvcmVzIGV0IGVhIHJlYnVtLiBTdGV0IGNsaXRhIGthc2QgZ3ViZXJncmVuLCBubyBzZWEgdGFraW1hdGEgc2FuY3R1cyBlc3QgTG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQu\\") format(\\"woff2\\"),
+    url(\\"data:font/woff;base64,TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNldGV0dXIgc2FkaXBzY2luZyBlbGl0ciwgc2VkIGRpYW0gbm9udW15IGVpcm1vZCB0ZW1wb3IgaW52aWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWduYSBhbGlxdXlhbSBlcmF0LCBzZWQgZGlhbSB2b2x1cHR1YS4gQXQgdmVybyBlb3MgZXQgYWNjdXNhbSBldCBqdXN0byBkdW8gZG9sb3JlcyBldCBlYSByZWJ1bS4gU3RldCBjbGl0YSBrYXNkIGd1YmVyZ3Jlbiwgbm8gc2VhIHRha2ltYXRhIHNhbmN0dXMgZXN0IExvcmVtIGlwc3VtIGRvbG9yIHNpdCBhbWV0LiBMb3JlbSBpcHN1bSBkb2xvciBzaXQgYW1ldCwgY29uc2V0ZXR1ciBzYWRpcHNjaW5nIGVsaXRyLCBzZWQgZGlhbSBub251bXkgZWlybW9kIHRlbXBvciBpbnZpZHVudCB1dCBsYWJvcmUgZXQgZG9sb3JlIG1hZ25hIGFsaXF1eWFtIGVyYXQsIHNlZCBkaWFtIHZvbHVwdHVhLiBBdCB2ZXJvIGVvcyBldCBhY2N1c2FtIGV0IGp1c3RvIGR1byBkb2xvcmVzIGV0IGVhIHJlYnVtLiBTdGV0IGNsaXRhIGthc2QgZ3ViZXJncmVuLCBubyBzZWEgdGFraW1hdGEgc2FuY3R1cyBlc3QgTG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQu\\") format(\\"woff\\"),
+    url(\\"data:font/ttf;base64,TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNldGV0dXIgc2FkaXBzY2luZyBlbGl0ciwgc2VkIGRpYW0gbm9udW15IGVpcm1vZCB0ZW1wb3IgaW52aWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWduYSBhbGlxdXlhbSBlcmF0LCBzZWQgZGlhbSB2b2x1cHR1YS4gQXQgdmVybyBlb3MgZXQgYWNjdXNhbSBldCBqdXN0byBkdW8gZG9sb3JlcyBldCBlYSByZWJ1bS4gU3RldCBjbGl0YSBrYXNkIGd1YmVyZ3Jlbiwgbm8gc2VhIHRha2ltYXRhIHNhbmN0dXMgZXN0IExvcmVtIGlwc3VtIGRvbG9yIHNpdCBhbWV0LiBMb3JlbSBpcHN1bSBkb2xvciBzaXQgYW1ldCwgY29uc2V0ZXR1ciBzYWRpcHNjaW5nIGVsaXRyLCBzZWQgZGlhbSBub251bXkgZWlybW9kIHRlbXBvciBpbnZpZHVudCB1dCBsYWJvcmUgZXQgZG9sb3JlIG1hZ25hIGFsaXF1eWFtIGVyYXQsIHNlZCBkaWFtIHZvbHVwdHVhLiBBdCB2ZXJvIGVvcyBldCBhY2N1c2FtIGV0IGp1c3RvIGR1byBkb2xvcmVzIGV0IGVhIHJlYnVtLiBTdGV0IGNsaXRhIGthc2QgZ3ViZXJncmVuLCBubyBzZWEgdGFraW1hdGEgc2FuY3R1cyBlc3QgTG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQu\\") format(\\"truetype\\");
+}
+
+.test {
+  background-image: url(\\"images/test.svg\\");
+}
+"
+`;
+
+exports[`Testing options font with mutiple on file test.css 1`] = `
+".test--1 {
+  background-image: url('data:image/svg+xml;base64,<svg viewBox=\\"0 0 16 10\\" xmlns=\\"http://www.w3.org/2000/svg\\"><path d=\\"M8 6.173L1.827 0 0 1.827l7.985 7.985L8 9.797l.015.015L16 1.827 14.173 0 8 6.173z\\"/></svg>');
+}
+
+.test--2 {
+  background-image: url(\\"images/test.svg\\");
+}
+
+.test--3 {
+  background: transparent url(\\"images/test.png\\") no-repeat center;
+}
+
+.test--4 {
+  /* Should not be affected by test */
+  background-image: url(\\"images/test.jpg\\");
+}
+
+/*!
+ * Comment
+ */
+"
+`;

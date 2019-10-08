@@ -1,0 +1,5 @@
+/.idea
+/src
+/test
+rewrite.js
+tsconfig.json

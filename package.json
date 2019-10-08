@@ -1,0 +1,38 @@
+{
+  "name": "@schadenn/postcss-base64",
+  "version": "0.0.1",
+  "description": "Inline url() files as base64 into css",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm-es5/index.js",
+  "es2015": "./dist/esm/index.js",
+  "es2017": "./dist/esm/index.js",
+  "jsnext:main": "./dist/esm/index.js",
+  "types": "./dist/index.d.ts",
+  "contributors": [
+    "Schaller, Dennis <dennis@schaller-ulm.de>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schadenn/postcss-base64.git"
+  },
+  "author": "Dennis Schaller",
+  "license": "MIT",
+  "dependencies": {
+    "postcss": "^7.0.18",
+    "postcss-message-helpers": "^2.0.0",
+    "postcss-value-parser": "^4.0.2"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.6.3"
+  },
+  "scripts": {
+    "build": "rimraf ./dist && npm run build:cjs && npm run build:esm-es5 && npm run build:esm",
+    "build:cjs": "tsc -d --declarationDir ./dist/types && node rewrite.js",
+    "build:esm-es5": "tsc --outDir ./dist/esm-es5 -t ES5 -m ES6",
+    "build:esm": "tsc --outDir ./dist/esm-es5 -t ESNext -m ESNext",
+    "test": "jest",
+    "test:update": "jest --updateSnapshot"
+  }
+}

@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "VagRoundedThin";
+  src: url("./fonts/font.eot") format("eot"),
+    url("./fonts/font.woff2") format("woff2"),
+    url("./fonts/font.woff") format("woff"),
+    url("./fonts/font.ttf") format("truetype");
+}
+
+.test {
+  background-image: url("images/test.svg");
+}

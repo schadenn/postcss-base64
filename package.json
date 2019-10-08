@@ -23,6 +23,7 @@
     "postcss-value-parser": "^4.0.2"
   },
   "devDependencies": {
+    "@types/node": "^12.7.11",
     "jest": "^24.9.0",
     "rimraf": "^3.0.0",
     "typescript": "^3.6.3"
@@ -31,7 +32,7 @@
     "build": "rimraf ./dist && npm run build:cjs && npm run build:esm-es5 && npm run build:esm",
     "build:cjs": "tsc -d --declarationDir ./dist/types && node rewrite.js",
     "build:esm-es5": "tsc --outDir ./dist/esm-es5 -t ES5 -m ES6",
-    "build:esm": "tsc --outDir ./dist/esm-es5 -t ESNext -m ESNext",
+    "build:esm": "tsc --outDir ./dist/esm -t ESNext -m ESNext",
     "test": "jest",
     "test:update": "jest --updateSnapshot"
   }

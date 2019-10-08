@@ -1,5 +1,5 @@
 {
-  "name": "@schadenn/postcss-base64",
+  "name": "postcss-url-base64",
   "version": "0.0.1",
   "description": "Inline url() files as base64 into css",
   "main": "./dist/cjs/index.js",

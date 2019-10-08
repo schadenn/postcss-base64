@@ -1,16 +1,16 @@
-@schadenn/postcss-base64, a [PostCSS](https://github.com/postcss/postcss/) plugin, replaces values inside `url()` functions with their base64 encoded strings.
+postcss-url-base64, a [PostCSS](https://github.com/postcss/postcss/) plugin, replaces values inside `url()` functions with their base64 encoded strings.
 
-[GitHub](https://github.com/schadenn/postcss-base64) | [NPM](https://www.npmjs.com/package/@schadenn/postcss-base64) | [@denyo357](https://twitter.com/denyo357)
+[GitHub](https://github.com/schadenn/postcss-base64) | [NPM](https://www.npmjs.com/package/postcss-url-base64) | [@denyo357](https://twitter.com/denyo357)
 
 #### Note
 I took some inspiration from [postcss-base64](https://github.com/jelmerdemaat/postcss-base64). But since the project is no longer maintained and it wasn't working for my use-case I built this.
 
 ## Install
 
-Install it from [NPM](https://www.npmjs.com/package/@schadenn/postcss-base64):
+Install it from [NPM](https://www.npmjs.com/package/postcss-url-base64):
 
 ```
-npm install @schadenn/postcss-base64
+npm install postcss-url-base64
 ```
 
 ## Use
@@ -68,7 +68,7 @@ const opts = {
 
 output = postcss([
     ...plugins...,
-    require("@schadenn/postcss-base64")(opts)
+    require("postcss-url-base64")(opts)
     ...plugins...
 ]).process(src).css;
 ```

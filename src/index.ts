@@ -70,7 +70,7 @@ const plugin = postcss.plugin(
                   } catch (error) {
                     if (saveOptions.warn) {
                       console.warn(
-                        `@schadenn/postcss-base64 plugin warning:\n${
+                        `postcss-url-base64 plugin warning:\n${
                           error.message
                         }`
                       );
@@ -90,7 +90,7 @@ const plugin = postcss.plugin(
       } catch (error) {
         if (saveOptions.warn) {
           console.warn(
-            `@schadenn/postcss-base64 plugin warning:\n${error.message}`
+            `postcss-url-base64 plugin warning:\n${error.message}`
           );
         }
         decl.warn(result, error.message, {
